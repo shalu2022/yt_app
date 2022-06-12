@@ -11,10 +11,11 @@ const SearchBar =({onTermFetch})=>{
 
   return ( 
   <div className="container"> 
+  
   <div className="card m-5">
     <div className="card-body">
+    <label class="card-title">Search Video</label>
       <div className="input-group">
-      <label>Search Video</label>
       <input value={term} type="search" className="form-control"  onChange={(e)=> setTerm(e.target.value)}/>
       <input onClick={onInputSubmit} className="btn btn-success" type="submit" value="Search"/>
       </div>
